@@ -43,14 +43,44 @@ body {
   }
 }
 
-.parallax {
+.parallax-ghooghaz {
+  height: 80vh;
+  /* position: relative; */
+  background-attachment: fixed;
+  background-position: center center;
+  /* Scale it nicely to the element */
+  background-size: cover;
+  background-image: url("img/img/ghoo3.jpg");
+}
+
+.parallax-ghazmahli {
+  height: 80vh;
+  /* position: relative; */
+  background-attachment: fixed;
+  background-position: center center;
+  /* Scale it nicely to the element */
+  background-size: cover;
+  background-image: url("img/img/abi5.jpg");
+}
+
+.parallax-boghy {
+  height: 80vh;
+  /* position: relative; */
+  background-attachment: fixed;
+  background-position: center center;
+  /* Scale it nicely to the element */
+  background-size: cover;
+  background-image: url("img/img/boghy2.jpg");
+}
+
+.parallax-ordak {
   height: 70vh;
   /* position: relative; */
   background-attachment: fixed;
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
-  background-image: url("img/abi_2.jpg");
+  background-image: url("img/img/abi_2.jpg");
 }
 
 .bg__footer {
