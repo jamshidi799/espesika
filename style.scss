@@ -1,3 +1,5 @@
+@import "mixin.scss";
+
 @font-face {
   font-family: IRANYekan;
   src: url("fonts/IRANYekan.ttf");
@@ -22,75 +24,38 @@ p {
 .carousel-inner {
   position: relative;
   margin-bottom: 2rem;
-  font-size: 30px;
-}
-
-@media screen and (min-width: 576px) {
-  .carousel-inner {
-    font-size: 40px;
+  @include responsive(font-size, 30px, 40px, 40px, 50px, 70px, 90px);
+  img {
+    width: 100%;
+    height: 70vh;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-inner {
-    font-size: 40px;
+  span {
+    transform: scale(1.5);
   }
-}
-
-@media screen and (min-width: 992px) {
-  .carousel-inner {
-    font-size: 50px;
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: black;
+    z-index: 2;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .carousel-inner {
-    font-size: 70px;
+  .carousel-caption {
+    top: 25vh;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    h1 {
+      font-size: 1em;
+    }
+    h3 {
+      color: cornsilk;
+      font-size: 0.5em;
+    }
   }
-}
-
-@media screen and (min-width: 1600px) {
-  .carousel-inner {
-    font-size: 90px;
-  }
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 70vh;
-}
-
-.carousel-inner span {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-.carousel-inner .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0.5;
-  background-color: black;
-  z-index: 2;
-}
-
-.carousel-inner .carousel-caption {
-  top: 25vh;
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  width: 70%;
-}
-
-.carousel-inner .carousel-caption h1 {
-  font-size: 1em;
-}
-
-.carousel-inner .carousel-caption h3 {
-  color: cornsilk;
-  font-size: 0.5em;
 }
 
 .card-img {
@@ -107,13 +72,8 @@ p {
 
 @media only screen and (max-width: 768px) {
   .reorder {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -183,6 +143,7 @@ p {
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
+  // background-image: url("img/abi_2.jpg");
 }
 
 .icon {
@@ -192,26 +153,27 @@ p {
 }
 
 .icon-phone {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .section {
   margin-bottom: 30px;
 }
 
-.bache .image-wrapper {
-  padding-bottom: 2rem;
-  height: 100%;
+.bache {
+  .image-wrapper {
+    padding-bottom: 2rem;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
-.bache .image-wrapper img {
-  width: 100%;
-  height: 100%;
+.tokhm-gozar {
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
-
-.tokhm-gozar img {
-  width: 100%;
-  height: auto;
-}
-/*# sourceMappingURL=style.css.map */
