@@ -27,7 +27,7 @@ p {
   @include responsive(font-size, 30px, 40px, 40px, 50px, 70px, 90px);
   img {
     width: 100%;
-    height: 70vh;
+    @include responsive(height, 50vh, 70vh, 70vh, 80vh, 80vh, 100vh);
   }
   span {
     transform: scale(1.5);
@@ -76,22 +76,22 @@ p {
     flex-direction: column-reverse;
   }
 }
-
 .parallax-ghooghaz {
-  height: 80vh;
+  @include responsive(height, 50vh, 60vh, 80vh, 80vh, 100vh);
   /* position: relative; */
   background-attachment: fixed;
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("img/img/ghoo3.jpg");
   margin-bottom: 30px;
 }
 
 .parallax-ghazmahli {
-  height: 80vh;
+  @include responsive(height, 50vh, 60vh, 80vh, 80vh, 100vh);
   /* position: relative; */
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
@@ -100,10 +100,10 @@ p {
 }
 
 .parallax-boghy {
-  height: 80vh;
+  @include responsive(height, 35vh, 60vh, 80vh, 80vh, 100vh);
   /* position: relative; */
-  background-attachment: fixed;
-  background-position: center center;
+  // background-attachment: fixed;
+  background-position: center;
   /* Scale it nicely to the element */
   background-size: cover;
   background-image: url("img/img/boghy2.jpg");
@@ -111,7 +111,7 @@ p {
 }
 
 .parallax-ordak {
-  height: 80vh;
+  @include responsive(height, 50vh, 60vh, 80vh, 80vh, 100vh);
   /* position: relative; */
   background-attachment: fixed;
   background-position: center center;
@@ -137,12 +137,10 @@ p {
   height: 100%;
   z-index: -1;
   opacity: 0.6;
-  /* height: 50vh; */
-  /* text-indent: -9999px; */
-  background-attachment: fixed;
-  background-position: center center;
-  /* Scale it nicely to the element */
-  background-size: cover;
+  //  height: 50vh;
+  // background-attachment: fixed;
+  // background-position: center center;
+  // background-size: cover;
   // background-image: url("img/abi_2.jpg");
 }
 
