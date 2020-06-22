@@ -3,31 +3,6 @@ document.querySelectorAll("p").forEach((p) => {
   p.classList.add("text-justify");
 });
 
-document.querySelector("head").innerHTML = `
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>اسپه سیکا پرورش غاز اوکراینی(قو‌غاز‌) و بوقلمون برنز آمریکایی</title>
-    <meta
-      name="keywords"
-      content="اسپه سیکا, غاز اوکراینی, قوغاز, جوجه غاز اوکراینی, قو‌غاز‌, بوقلمون برنز آمریکایی, اردک"
-    />
-    <meta
-      name="description"
-      content="مزرعه اسپه سیکا پرورش و فروش غاز اوکراینی(قو‌غاز‌‌) و بوقلمون برنز آمریکایی"
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" href="img/icons/kiwi-bird.png" type="image/x-icon" />
-    <meta
-      name="google-site-verification"
-      content="fsX1ox9AKWWn3gB1lAv-GyMBNjc6UzTSrzDT3BsN6_Q"
-    />
-`;
-
 document.querySelector("nav").innerHTML = `
 <a class="navbar-brand" href="/">اسپه سیکا</a>
 <button
