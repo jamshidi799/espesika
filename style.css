@@ -186,10 +186,11 @@ p {
 .parallax-ghazmahli {
   height: 50vh;
   /* position: relative; */
+  background-attachment: fixed;
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
-  background-image: url("img/img/abi5.jpg");
+  background-image: url("img/img/abi_bache1.jpg");
   margin-bottom: 30px;
 }
 
@@ -214,6 +215,46 @@ p {
 @media screen and (min-width: 1200px) {
   .parallax-ghazmahli {
     height: 100vh;
+  }
+}
+
+.hero-ghazmahli {
+  height: 50vh;
+  /* position: relative; */
+  /* Scale it nicely to the element */
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-image: url("img/img/abi5.jpg");
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 576px) {
+  .hero-ghazmahli {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-ghazmahli {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-ghazmahli {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-ghazmahli {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-ghazmahli {
+    background-size: cover;
   }
 }
 
@@ -286,6 +327,18 @@ p {
   }
 }
 
+.custom-navber {
+  background-color: black;
+}
+
+.custom-navber .nav-item .nav-link {
+  color: yellow;
+}
+
+.custom-navber .nav-item .nav-link:visited {
+  color: black;
+}
+
 .bg__footer {
   position: relative;
   overflow-x: hidden;
@@ -319,6 +372,34 @@ p {
   margin-bottom: 30px;
 }
 
+.bache {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .bache {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bache {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bache {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bache {
+    font-size: 20px;
+  }
+}
+
 .bache .image-wrapper {
   padding-bottom: 2rem;
   height: 100%;
@@ -329,8 +410,53 @@ p {
   height: 100%;
 }
 
+.bache h4 {
+  font-size: 2em;
+}
+
+.bache p {
+  font-size: 1em;
+}
+
+.tokhm-gozar {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .tokhm-gozar {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tokhm-gozar {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tokhm-gozar {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tokhm-gozar {
+    font-size: 20px;
+  }
+}
+
 .tokhm-gozar img {
   width: 100%;
   height: auto;
+  margin: 10px auto;
+}
+
+.tokhm-gozar h3 {
+  font-size: 2em;
+}
+
+.tokhm-gozar p {
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */
