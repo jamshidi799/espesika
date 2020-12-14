@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import styles from './index.module.scss';
+import Layout from '../components/layout';
 
 export default function Home() {
   return (
-    <div>
-      <Head children={<title>Create Next App</title>}></Head>
-
-      <main></main>
-    </div>
+    <Layout isCantanier={false}>
+      <Head>
+        <title>طارم پلا برنج اصیل مازندران</title>
+      </Head>
+    </Layout>
   );
 }

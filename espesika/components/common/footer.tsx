@@ -1,6 +1,6 @@
 import style from './footer.module.scss';
-import Phone from '@material-ui/icons/Phone';
-import Email from '@material-ui/icons/Email';
+// import Phone from '@material-ui/icons/Phone';
+// import Email from '@material-ui/icons/Email';
 
 export default function Footer() {
   return (
@@ -18,15 +18,15 @@ export default function Footer() {
           <div className="col-6 col-lg-4">
             <h1>تماس باما</h1>
             <div className="d-flex align-items-center mb-3">
-              <Phone />
+              {/* <Phone /> */}
               <h6 className={style.info}>0911 127 6818</h6>
             </div>
             <div className="d-flex align-items-center mb-3">
-              <Phone />
+              {/* <Phone /> */}
               <h6 className={style.info}>0911 127 6818</h6>
             </div>
             <div className="d-flex align-items-center mb-3">
-              <Email />
+              {/* <Email /> */}
               <h6 className={style.info}>tarempela@gmail.com</h6>
             </div>
           </div>
