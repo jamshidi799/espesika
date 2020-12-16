@@ -1,73 +1,54 @@
-@import "mixin.scss";
+@font-face {
+  font-family: KalamehWeb;
+  src: url(./fonts/KalamehWeb_Bold.eot);
+  src: url("/assets/fonts/vazir/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url(./fonts/KalamehWeb_Bold.woff2) format("woff2"),
+    url(./fonts/KalamehWeb_Bold.woff) format("woff"),
+    url(./fonts/KalamehWeb_Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: IRANYekan;
-  src: url("fonts/IRANYekan.ttf");
+  font-family: KalamehWeb;
+  src: url(./fonts/KalamehWeb_Regular.eot);
+  src: url("/assets/fonts/vazir/Vazir-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url(./fonts/KalamehWeb_Regular.woff2) format("woff2"),
+    url(./fonts/KalamehWeb_Regular.woff) format("woff"),
+    url(./fonts/KalamehWeb_Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-  direction: rtl;
-  font-family: IRANYekan;
+  font-family: KalamehWeb;
   text-align: right;
+  direction: rtl;
 }
+
+@import "./mixins.scss";
 
 html,
 body {
-  max-width: 100%;
   overflow-x: hidden;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+  &:visited {
+    color: black;
+  }
 }
 
 p {
   text-align: justify;
-}
-
-.carousel-inner {
-  position: relative;
-  margin-bottom: 2rem;
-  @include responsive(font-size, 30px, 40px, 40px, 50px, 70px, 90px);
-  img {
-    width: 100%;
-    @include responsive(height, 50vh, 70vh, 70vh, 80vh, 80vh, 100vh);
-  }
-  span {
-    transform: scale(1.5);
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0.5;
-    background-color: black;
-    z-index: 2;
-  }
-  .carousel-caption {
-    top: 25vh;
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    width: 70%;
-    h1 {
-      font-size: 1em;
-    }
-    h3 {
-      color: cornsilk;
-      font-size: 0.5em;
-    }
-  }
-}
-
-.card-img {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  border-radius: 50%;
-}
-
-.sec-img {
-  width: 100%;
-  height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,7 +65,7 @@ p {
   /* Scale it nicely to the element */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("img/img/ghoo3.jpg");
+  background-image: url("/img/img/ghoo3.jpg");
   margin-bottom: 30px;
 }
 
@@ -95,7 +76,7 @@ p {
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
-  background-image: url("img/img/abi_bache1.jpg");
+  background-image: url("/img/img/abi_bache1.jpg");
   margin-bottom: 30px;
 }
 
@@ -106,7 +87,7 @@ p {
     background-size: cover;
   }
   background-repeat: no-repeat;
-  background-image: url("img/img/abi5.jpg");
+  background-image: url("/img/img/abi5.jpg");
   margin-bottom: 30px;
 }
 .hero-ordak {
@@ -118,7 +99,7 @@ p {
     background-position: center top;
   }
   background-repeat: no-repeat;
-  background-image: url("img/img/ordak3.jpg");
+  background-image: url("/img/img/ordak3.jpg");
   margin-bottom: 30px;
 }
 
@@ -129,7 +110,7 @@ p {
   background-position: center;
   /* Scale it nicely to the element */
   background-size: cover;
-  background-image: url("img/img/boghy2.jpg");
+  background-image: url("/img/img/boghy2.jpg");
   margin-bottom: 30px;
 }
 
@@ -140,7 +121,7 @@ p {
   background-position: center center;
   /* Scale it nicely to the element */
   background-size: cover;
-  background-image: url("img/img/ordak3.jpg");
+  background-image: url("/img/img/ordak3.jpg");
   margin-bottom: 30px;
 }
 
