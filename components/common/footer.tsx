@@ -1,7 +1,3 @@
-import style from './footer.module.scss';
-// import Phone from '@material-ui/icons/Phone';
-// import Email from '@material-ui/icons/Email';
-
 export default function Footer() {
   return (
     <footer className="container-fluid bg__footer p-5">
