@@ -4,9 +4,9 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-      <a className="navbar-brand" href="/">
-        اسپه سیکا
-      </a>
+      <Link href="/">
+        <a className="navbar-brand">اسپه سیکا</a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -18,24 +18,24 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="/ghooghaz.html">
-              غاز ‌اوکراینی
-            </a>
+            <Link href="/ghooghaz">
+              <a className="nav-link">غاز ‌اوکراینی</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/boghy.html">
-              بوقلمون برنز
-            </a>
+            <Link href="/boghy">
+              <a className="nav-link">بوقلمون برنز</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/ghazmahli.html">
-              غاز محلی
-            </a>
+            <Link href="/ghazmahali">
+              <a className="nav-link">غاز محلی</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/ordak.html">
-              اردک محلی
-            </a>
+            <Link href="/ordak">
+              <a className="nav-link">اردک محلی</a>
+            </Link>
           </li>
         </ul>
       </div>
