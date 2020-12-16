@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from './index.module.scss';
 import Image from 'next/image';
+import Link from 'next/link'
 import Layout from '../components/layout';
 
 export default function Home() {
@@ -110,9 +111,11 @@ export default function Home() {
               بچه غازهای بزرگتر از یک ماه را ترجیح میدهند چون هم احتمال مرگ آن
               ها کمتر است و هم دردسر نگهداری کمتری برای خریداران دارد
             </p>
-            <a className="text-muted text-right" href="/ghooghaz.html"
+            <Link href="/ghooghaz">
+            <a className="text-muted text-right" 
               ><span> >> </span>‌جزییات پرورش قوغاز</a
             >
+              </Link>
           </div>
         </div>
       </div>
@@ -135,9 +138,11 @@ export default function Home() {
           برای اطلاعات بیشتر درمورد پرورش بوقلمون برنز آمریکایی به صفحه آن
           بروید
         </p>
-        <a className="text-muted text-right" href="/boghy.html"
+        <Link href="/boghy">
+        <a className="text-muted text-right" 
           ><span> >> </span>‌جزییات پرورش بوقلمون برنز آمریکایی</a
         >
+          </Link>
       </div>
       <img
         src="img/img/boghy_bache.jpg"
@@ -172,9 +177,11 @@ export default function Home() {
         <p>
           برای اطلاعات بیشتر درمورد پرورش غازهای محلی به صفحه آن بروید
         </p>
-        <a className="text-muted text-right" href="/ghazmahli.html"
+        <Link href="/ghazmahali">
+        <a className="text-muted text-right" 
           ><span> >> </span>‌جزییات پرورش غازهای محلی</a
         >
+          </Link>
       </div>
     </div>
   </div>
