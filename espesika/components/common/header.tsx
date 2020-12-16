@@ -17,6 +17,11 @@ export default function Header() {
         <meta property="og:type" content="business.business" />
         <meta property="og:image" content="https://drive.google.com/uc?export=download&id=1J8Uu703fgfUD_C2vx96kNeatYEBV2yw9" />
         <meta name="google-site-verification" content="ZtmciE-XG3LcOjDs5SjrppiQGqSPFZK446hs2uUJjPE" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossOrigin="anonymous"></link>
       </Head>
     </>
   );
