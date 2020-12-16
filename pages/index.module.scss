@@ -1,4 +1,4 @@
-@import "/styles/mixins.scss";
+@import '/styles/mixins.scss';
 
 .carousel_inner {
   position: relative;
@@ -27,14 +27,17 @@
     left: 15%;
     right: 15%;
     width: 70%;
-    h1 {
-      font-size: 1em;
-    }
-    h3 {
-      color: cornsilk;
-      font-size: 0.5em;
-    }
+    z-index: 3;
   }
+}
+.hero_h1 {
+  font-size: 1em;
+  color: cornsilk;
+  z-index: 100;
+}
+.hero_h3 {
+  color: cornsilk;
+  font-size: 0.5em;
 }
 
 .card_img {
