@@ -1,3 +1,42 @@
+@import "/styles/mixins.scss";
+
+.carousel_inner {
+  position: relative;
+  margin-bottom: 2rem;
+  @include responsive(font-size, 30px, 40px, 40px, 50px, 70px, 90px);
+  img {
+    width: 100%;
+    @include responsive(height, 50vh, 70vh, 70vh, 80vh, 80vh, 100vh);
+  }
+  span {
+    transform: scale(1.5);
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: black;
+    z-index: 2;
+  }
+  .carousel_caption {
+    top: 25vh;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    h1 {
+      font-size: 1em;
+    }
+    h3 {
+      color: cornsilk;
+      font-size: 0.5em;
+    }
+  }
+}
+
 .card_img {
   width: 200px;
   height: 200px;

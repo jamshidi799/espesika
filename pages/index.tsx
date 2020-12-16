@@ -9,6 +9,51 @@ export default function Home() {
       <Head>
         <title>طارم پلا برنج اصیل مازندران</title>
       </Head>
+
+      <header>
+      <div id="demo" className="carousel slide" data-ride="carousel">
+        <ul className="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" className="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div className={styles.carousel_inner}>
+          <div className="overlay"></div>
+          <div className="carousel-item">
+            <img
+              className="carousel-img"
+              src="img/carousel/gho.jpg"
+              alt="اسپه سیکا"
+            />
+            <div className="carousel-caption">
+              <h1>غاز اوکراینی (قو‌غاز‌)</h1>
+              <h3>پرورش غاز اوکراینی</h3>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img
+              className="carousel-img"
+              src="img/carousel/boghi.jpg"
+              alt="اسپه سیکا"
+            />
+            <div className="carousel-caption">
+              <h1>بوقلمون</h1>
+              <h3>پرورش بوقلمون های برنز با وزن ۱۷ کیلو</h3>
+            </div>
+          </div>
+          <div className="carousel-item active">
+            <img src="img/img/abi_bache2.jpg" alt="اسپه سیکا" />
+            <div className="carousel-caption">
+              <h1>غاز محلی</h1>
+              <h3>پرورش غاز های محلی دورگه</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-overlay"></div>
+    </header>
+
+
       <main>
         <section>
           <div className="container">
@@ -117,11 +162,11 @@ export default function Home() {
         <h1 className="text-right mb-5">بچه غاز محلی</h1>
         <p>
           غازهای محلی یا غاز هوایی که در مجموعه
-          <strong>اسپه سیکا</strong> پرورش داده می‌شوند غاز های دورگه اصلاح
+          <strong> اسپه سیکا </strong> پرورش داده می‌شوند غاز های دورگه اصلاح
           نژاد شده هستند
         </p>
         <p>
-          جوجه‌هایorder-1 order-md-2 غاز محلی سریع‌تر از جوجه غاز‌اوکراینی
+          جوجه‌های غاز محلی سریع‌تر از جوجه غاز‌اوکراینی
           رشد می‌کند و نگهداری از آنها هم آسان‌تر است
         </p>
         <p>
